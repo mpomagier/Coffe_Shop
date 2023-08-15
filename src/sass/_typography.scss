@@ -1,0 +1,42 @@
+// Head Titles
+
+h1 {
+  font-size: 36px;
+  font-weight: $font-bold;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 28px;
+  font-weight: $font-bold;
+  margin-bottom: 15px;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: $font-semibold;
+  margin-bottom: 15px;
+}
+
+// Titles
+.title {
+  font-size: 20px;
+  font-weight: $font-semibold;
+}
+
+// Interlines
+p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+// Links
+a {
+  color: $color-main;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

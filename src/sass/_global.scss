@@ -1,0 +1,61 @@
+/* Variables */
+
+$color-dark: #2e2e2e;
+$color-brand: #cdaa7c;
+$color-light: #fff;
+
+$color-text: #777777;
+$color-text-light: #9b9b9b;
+$color-border: #f2f0ed;
+$color-button: #a48d72;
+$color-shadow: #262626;
+
+$font-content: 'Lato', sans-serif;
+$font-title: 'Montserrat', sans-serif;
+$font-spec: 'Open Sans', sans-serif;
+$font-button: 'Oswald', sans-serif;
+$font-foot: 'Roboto', sans-serif;
+$font-quote: 'Roboto Slab', serif;
+
+$font-light: 300;
+$font-normal: 400;
+$font-semibold: 500;
+$font-bold: 700;
+
+$transition: all .3s;
+$radius: 4px;
+
+$base-size: 12px;
+
+
+
+// Buttons
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: $radius;
+  cursor: pointer;
+  transition: background-color $transition, color $transition;
+}
+
+.button-primary {
+  background-color: $color-main;
+  color: $color-light;
+
+  &:hover {
+    background-color: darken($color-main, 10%);
+  }
+}
+
+.button-secondary {
+  background-color: $color-light;
+  color: $color-dark;
+  border: 1px solid $color-dark;
+
+  &:hover {
+    background-color: lighten($color-light, 10%);
+  }
+}

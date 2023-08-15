@@ -1,0 +1,25 @@
+// Import variables
+@import '_variables';
+
+// Import normalize.css
+@import '_normalize';
+
+// Import Bootstrap
+@import '_bootstrap';
+
+// Import page layout
+@import '_layout';
+
+// Import typografy
+@import '_typography';
+
+// Import global style
+@import '_global';
+
+// Import style for components
+@import 'pages/_homepage';
+@import 'pages/_products';
+@import 'pages/_contact';
+
+// Import remaining customizations
+@import 'style_customizations';

@@ -1,0 +1,30 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Kawa Arabica",
+      "description": "Najwyższej jakości kawa Arabica z Wenezueli.",
+      "price": 15.99
+    },
+    {
+      "id": 2,
+      "name": "Kawa Robusta",
+      "description": "Intensywna kawa Robusta o wyrazistym smaku.",
+      "price": 12.99
+    },
+    {
+      "id": 3,
+      "name": "Kawa Mieszanka",
+      "description": "Wysokiej jakości mieszanka Arabica i Robusta.",
+      "price": 18.99
+    }
+  ],
+  "companyInfo": {
+    "name": "Wenezuelska Palarnia Kawy",
+    "about": "Jesteśmy rodzinna palarnią kawy z pasją do jakości.",
+    "contact": {
+      "email": "info@wenezuelska-kawa.com",
+      "phone": "+48 123 456 789"
+    }
+  }
+}
