@@ -1,20 +1,14 @@
 /* Variables */
 
-$color-dark: #2e2e2e;
-$color-brand: #cdaa7c;
+$color-brand: #BEA67C;
+$color-dark: #000;
 $color-light: #fff;
-
-$color-text: #777777;
-$color-text-light: #9b9b9b;
-$color-border: #f2f0ed;
-$color-button: #a48d72;
-$color-shadow: #262626;
 
 $font-content: 'Lato', sans-serif;
 $font-title: 'Montserrat', sans-serif;
 $font-spec: 'Open Sans', sans-serif;
 $font-button: 'Oswald', sans-serif;
-$font-foot: 'Roboto', sans-serif;
+$font-footer: 'Roboto', sans-serif;
 $font-quote: 'Roboto Slab', serif;
 
 $font-light: 300;
@@ -39,23 +33,4 @@ $base-size: 12px;
   border-radius: $radius;
   cursor: pointer;
   transition: background-color $transition, color $transition;
-}
-
-.button-primary {
-  background-color: $color-main;
-  color: $color-light;
-
-  &:hover {
-    background-color: darken($color-main, 10%);
-  }
-}
-
-.button-secondary {
-  background-color: $color-light;
-  color: $color-dark;
-  border: 1px solid $color-dark;
-
-  &:hover {
-    background-color: lighten($color-light, 10%);
-  }
 }
