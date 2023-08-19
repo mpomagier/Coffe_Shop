@@ -1,25 +1,14 @@
-// Import variables
-@import '_variables';
+@import 'variables';
+@import 'normalize';
 
-// Import normalize.css
-@import '_normalize';
+@import 'bootstrap';
 
-// Import Bootstrap
-@import '_bootstrap';
+@import 'layout';
 
-// Import page layout
-@import '_layout';
+@import 'typography';
 
-// Import typografy
-@import '_typography';
+@import 'global';
 
-// Import global style
-@import '_global';
-
-// Import style for components
-@import 'pages/_homepage';
-@import 'pages/_products';
-@import 'pages/_contact';
-
-
-@import 'node_modules/bootstrap/scss/forms/_labels.scss';
+@import 'pages/homepage';
+@import 'pages/products';
+@import 'pages/contact';
