@@ -1,12 +1,11 @@
 import { settings, select, classNames } from './settings.js';
-import Home from '../components/Home.js';
-import Contact from '../components/contact.js';
-import Product from '../components/Product.js';
+import Home from './components/Home.js';
+import Contact from './components/Contact.js';
+import Product from './components/Product.js';
 
 const app = {
-
-  initData: function() {
-    const thisApp=this;
+  initData: function () {
+    const thisApp = this;
 
     this.data = {};
 
@@ -22,7 +21,7 @@ const app = {
       });
   },
 
-  initPages: function(){
+  initPages: function () {
     const thisApp = this;
 
     thisApp.pages = document.querySelector(select.containerOf.pages).children;
@@ -30,10 +29,10 @@ const app = {
 
     const idFromHash = window.location.hash.replace('#/', '');
 
-    let PageMatchingHash  = thisApp.pages[0].id;
+    let PageMatchingHash = thisApp.pages[0].id;
 
-    for(let page of thisApp.pages){
-      if(page.id == idFromHash){
+    for (let page of thisApp.pages) {
+      if (page.id == idFromHash) {
         PageMatchingHash = page.id;
         break;
       }
@@ -41,8 +40,8 @@ const app = {
 
     thisApp.activatePage(PageMatchingHash);
 
-    for(let link of thisApp.navLinks){
-      link.addEventListener('click', function(event){
+    for (let link of thisApp.navLinks) {
+      link.addEventListener('click', function (event) {
         const clickedElement = this;
         event.preventDefault();
 
@@ -55,18 +54,20 @@ const app = {
     }
   },
 
-  activatePage: function(pageId){
+  activatePage: function (pageId) {
     const thisApp = this;
 
-    for(let page of thisApp.pages){
+    for (let page of thisApp.pages) {
       page.classList.toggle(classNames.pages.active, page.id == pageId);
     }
 
-    for(let link of thisApp.navLinks){
-      link.classList.toggle(classNames.nav.active, link.getAttribute ('href') == '#' + pageId);
+    for (let link of thisApp.navLinks) {
+      link.classList.toggle(
+        classNames.nav.active,
+        link.getAttribute('href') == '#' + pageId
+      );
     }
   },
-
 
   initProducts: function () {
     const thisApp = this;
@@ -76,20 +77,19 @@ const app = {
     console.log('thisApp.data.products', thisApp.data.products);
   },
 
-  initHome: function(){
+  initHome: function () {
     const thisApp = this;
     const homeContainer = document.querySelector(select.containerOf.home);
     thisApp.home = new Home(homeContainer);
   },
 
-
-  initContact: function(){
+  initContact: function () {
     const thisApp = this;
     const contactContainer = document.querySelector(select.containerOf.contact);
     thisApp.contact = new Contact(contactContainer);
   },
 
-  init: function() {
+  init: function () {
     const thisApp = this;
     thisApp.initData();
     thisApp.initPages();

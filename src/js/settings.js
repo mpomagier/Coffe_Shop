@@ -16,30 +16,36 @@ export const select = {
   home: {
     productsHome: '.home-products',
   },
-  products: {
-
-  },
+  products: {},
   contact: {
     submitBtn: '#submit-btn',
     input: {
       name: '#name',
       title: '#title',
       message: '#message',
-    }
+    },
   },
 };
-
 export const settings = {
   db: {
-    url: '//' + window.location.hostname + (window.location.hostname=='localhost' ? ':3131' : ''),
+    url:
+      '//' +
+      window.location.hostname +
+      (window.location.hostname == 'localhost' ? ':3131' : ''),
     products: 'products',
   },
 };
 
-export const templates ={
-  homeWidget: Handlebars.compile(document.querySelector(select.templateOf.homeWidget).innerHTML),
-  productWidget: Handlebars.compile(document.querySelector(select.templateOf.productWidget).innerHTML),
-  contactWidget: Handlebars.compile(document.querySelector(select.templateOf.contactWidget).innerHTML),
+export const templates = {
+  homeWidget: Handlebars.compile(
+    document.querySelector(select.templateOf.homeWidget).innerHTML
+  ),
+  productWidget: Handlebars.compile(
+    document.querySelector(select.templateOf.productWidget).innerHTML
+  ),
+  contactWidget: Handlebars.compile(
+    document.querySelector(select.templateOf.contactWidget).innerHTML
+  ),
 };
 
 export const classNames = {

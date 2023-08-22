@@ -8,11 +8,11 @@ class Product {
     thisProduct.render(data);
   }
 
-  render(data){
+  render(data) {
     const thisProduct = this;
 
     const generatedHTML = templates.productWidget({
-      products: data
+      products: data,
     });
     const generatedDom = utils.createDOMFromHTML(generatedHTML);
     const generatedDomHome = utils.createDOMFromHTML(generatedHTML);

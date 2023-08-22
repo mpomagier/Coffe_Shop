@@ -2,12 +2,12 @@ import { templates, select } from '../settings.js';
 import utils from '../utils.js';
 
 class Home {
-  constructor(){
+  constructor() {
     const thisHome = this;
     thisHome.render();
   }
 
-  render(){
+  render() {
     const thisHome = this;
 
     const generatedHTML = templates.homeWidget();

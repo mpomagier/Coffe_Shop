@@ -1,4 +1,4 @@
-import { templates, select } from '../settings.js';
+import { templates, select } from './../settings.js';
 import utils from '../utils.js';
 
 class Contact {
@@ -8,7 +8,7 @@ class Contact {
     thisContact.render(element);
   }
 
-  render(element){
+  render(element) {
     const thisContact = this;
 
     const generatedHTML = templates.contactWidget();
