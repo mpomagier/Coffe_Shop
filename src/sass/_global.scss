@@ -1,7 +1,16 @@
-/* Variables */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;0,900;1,600&display=swap');
 
-$font-light: 300;
-$font-normal: 400;
-$font-semibold: 500;
-$font-bold: 700;
+#pages {
+  > * {
+    display: none;
+  }
 
+  > .active {
+    display: block;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
