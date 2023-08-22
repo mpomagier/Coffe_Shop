@@ -15,9 +15,12 @@ class Product {
       products: data
     });
     const generatedDom = utils.createDOMFromHTML(generatedHTML);
+    const generatedDomHome = utils.createDOMFromHTML(generatedHTML);
     const productWrapper = document.querySelector(select.containerOf.products);
+    const homeProductWrapper = document.querySelector(select.home.productsHome);
 
     productWrapper.appendChild(generatedDom);
+    homeProductWrapper.prepend(generatedDomHome);
 
     thisProduct.dom = {};
   }

@@ -17,6 +17,11 @@ class Contact {
 
     contactWrapper.appendChild(generatedDom);
 
+    thisContact.dom = {
+      wrapper: element,
+      submitBtn: element.querySelector(select.contact.submitBtn),
+    };
+
     thisContact.dom.inputs = {
       name: element.querySelector(select.contact.input.name),
       title: element.querySelector(select.contact.input.title),
