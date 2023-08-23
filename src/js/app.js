@@ -73,8 +73,6 @@ const app = {
     const thisApp = this;
 
     new Product(thisApp.data.products);
-
-    console.log('thisApp.data.products', thisApp.data.products);
   },
 
   initHome: function () {
